@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
+import { TasksService } from './tasks.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'task_tracker';
+  constructor(private taskService: TasksService) {}
+  
+  addNewTask(task:String) {
+    this.taskService.addNewTask(task)
+  }
 }

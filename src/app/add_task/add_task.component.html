@@ -1,0 +1,10 @@
+<div class="container-fluid" style="align-items: center;">
+    <div class="row" style="max-width: 500px; align-items: center; margin: 0% 20% 0% 20%;">
+        <form class="d-flex justify-content-center align-items-center mb-4">
+            <div class="form-outline flex-fill">
+              <input class="form-control" [ngClass]="className" #enteredContent type="text" id="form2"  />
+            </div>
+            <a (click)="addTask(enteredContent)" class="btn btn-info ms-2">Add</a>
+          </form>
+    </div>
+</div>

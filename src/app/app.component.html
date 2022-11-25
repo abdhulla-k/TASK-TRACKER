@@ -6,17 +6,9 @@
           <div class="card">
             <div class="card-body p-5">
   
-                <div class="container-fluid" style="align-items: center;">
-                    <div class="row" style="max-width: 500px; align-items: center; margin: 0% 20% 0% 20%;">
-                        <form class="d-flex justify-content-center align-items-center mb-4">
-                            <div class="form-outline flex-fill">
-                              <input type="text" id="form2" class="form-control" />
-                            </div>
-                            <button type="submit" class="btn btn-info ms-2">Add</button>
-                          </form>
-                    </div>
-                </div>
-              
+              <!-- add task component -->
+              <app-add-task (taskShare)="addNewTask($event)"></app-add-task>
+              <!-- /add task component -->
               
               <hr>
 
